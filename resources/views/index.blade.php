@@ -8,7 +8,7 @@
     <meta name="og:description" property="og:description" content="{{ __('seo.og:description') }}" />
     <meta name="og:type" property="og:type" content="website">
     <meta name="og:site_name" property="og:site_name"
-        content="https://<?php echo $_SERVER['HTTP_HOST']; ?>">
+        content="<?php echo $_SERVER['HTTP_HOST']; ?>">
     <meta name="og:image" property="og:image"
         content="https://<?php echo $_SERVER['HTTP_HOST']; ?>/og-img.png">
     <meta name="og:image:width" property="og:image:width" content="1200">

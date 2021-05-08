@@ -93,16 +93,16 @@
                 </select>
             </li>
             <li>
-                <a href="/"
+                <a href="{{ LaravelLocalization::localizeUrl('') }}"
                     class="text-sm text-gray-700 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
             </li>
             <li>
-                <a href="/"
+                <a href="{{ LaravelLocalization::localizeUrl('') }}"
                     class="text-sm text-gray-700 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
                     Policy</a>
             </li>
             <li>
-                <a href="/"
+                <a href="{{ LaravelLocalization::localizeUrl('') }}"
                     class="text-sm text-gray-700 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
                     &amp; Conditions</a>
             </li>

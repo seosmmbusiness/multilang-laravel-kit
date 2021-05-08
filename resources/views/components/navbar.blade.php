@@ -1,7 +1,8 @@
 <nav class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div class="relative flex items-center justify-between">
         <div class="flex items-center">
-            <a href="/" aria-label="Company" title="Company" class="inline-flex items-center mr-8">
+            <a href="{{ LaravelLocalization::localizeUrl('/') }}" aria-label="Company" title="Company"
+                class="inline-flex items-center mr-8">
                 <svg width="32" height="32" class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24"
                     stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
                     stroke="currentColor" fill="none">
@@ -88,7 +89,8 @@
                 <div class="p-5 bg-white border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                         <div>
-                            <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                            <a href="{{ LaravelLocalization::localizeUrl('/') }}" aria-label="Company" title="Company"
+                                class="inline-flex items-center">
                                 <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
                                     stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor"
                                     fill="none">
