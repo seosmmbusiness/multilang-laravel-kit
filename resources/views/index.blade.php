@@ -6,21 +6,10 @@
 
     <meta name="og:title" property="og:title" content="{{ __('seo.og:title') }}">
     <meta name="og:description" property="og:description" content="{{ __('seo.og:description') }}" />
-    <meta name="og:type" property="og:type" content="website">
-    <meta name="og:site_name" property="og:site_name"
-        content="<?php echo $_SERVER['HTTP_HOST']; ?>">
-    <meta name="og:image" property="og:image"
-        content="https://<?php echo $_SERVER['HTTP_HOST']; ?>/og-img.png">
-    <meta name="og:image:width" property="og:image:width" content="1200">
-    <meta name="og:image:height" property="og:image:height" content="630">
-    <meta name="og:image:type" property="og:image:type" content="image/png">
+
     <meta name="twitter:title" content="{{ __('seo.title') }}">
     <meta name="twitter:description" content="{{ __('seo.description') }}">
-    <meta name="twitter:card" property="twitter:card" content="summary">
-    <meta name="twitter:site" property="twitter:site" content="@YOURTWITTERNAME">
-    <meta name="twitter:creator" property="twitter:creator" content="@YOURTWITTERNAME">
-    <meta name="twitter:image" property="twitter:image"
-        content="https://<?php echo $_SERVER['HTTP_HOST']; ?>/og-img.png">
+
 @endsection
 
 @section('content')

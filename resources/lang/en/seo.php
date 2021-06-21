@@ -12,7 +12,7 @@ return [
     | has failed, such as for an invalid token or invalid new password.
     |
     */
-
+    "og:site_name" => "Laravel 8 Multilang Seo Example",
     "title"=> "Laravel 8 Multilang Seo Example",
     "description"=> "Laravel 8 Multilang Seo Example - Template to make simple multilang website",
     "og:title"=> "OG - Laravel 8 Multilang Seo Example",

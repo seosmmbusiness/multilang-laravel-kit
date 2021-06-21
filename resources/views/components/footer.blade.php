@@ -102,11 +102,10 @@
                     Policy</a>
             </li>
             <li>
-                <a href="{{ LaravelLocalization::localizeUrl('') }}"
+                <a href="{{ LaravelLocalization::localizeUrl('terms') }}"
                     class="text-sm text-gray-700 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
                     &amp; Conditions</a>
             </li>
-
         </ul>
     </div>
 </div>

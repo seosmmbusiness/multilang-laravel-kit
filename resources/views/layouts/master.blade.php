@@ -4,13 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ URL::asset('/favicon.ico') }}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- SEO website information -->
     @yield('seo_header')
+
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="{{ __('seo.og:site_name') }}">
+    <meta name="og:image" property="og:image" content="{{ URL::asset('/og-img.png') }}">
+    <meta name="og:image:width" property="og:image:width" content="1200">
+    <meta name="og:image:height" property="og:image:height" content="630">
+    <meta name="og:image:type" property="og:image:type" content="image/png">
+
+    <meta name="twitter:card" property="twitter:card" content="summary">
+    <meta name="twitter:site" property="twitter:site" content="@YOURTWITTERNAME">
+    <meta name="twitter:creator" property="twitter:creator" content="@YOURTWITTERNAME">
+    <meta name="twitter:image" property="twitter:image" content="{{ URL::asset('/og-img.png') }}">
 
     <!-- Multilang headers -->
     <link rel="alternate" hreflang="x-default" href="{{ LaravelLocalization::getLocalizedURL('en') }}">

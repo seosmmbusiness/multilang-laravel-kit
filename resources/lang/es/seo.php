@@ -12,7 +12,8 @@ return [
     | has failed, such as for an invalid token or invalid new password.
     |
     */
-
+    
+    "og:site_name" => "Ejemplo de SEO multilang de Laravel 8",
     "title"=> "Ejemplo de SEO multilang de Laravel 8",
     "description"=> "Laravel 8 Multilang Seo Example - Plantilla para hacer un sitio web simple multilang",
     "og:title"=> "OG - Ejemplo de SEO multilang de Laravel 8",

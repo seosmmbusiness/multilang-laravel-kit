@@ -16,6 +16,7 @@ Uses:
 
 -Laravel Mix Extract Media Queries https://github.com/elambro/laravel-mix-extract-media-queries
 
+-Laravelium Sitemap package https://github.com/Laravelium/laravel-sitemap
 
 
 The main goal is to create a multilingual landing page starter kit with full SEO titles and headings and with Google Pagespeed close to 100.
@@ -72,6 +73,9 @@ add to master.blade preload and links to new scripts.
 According to Mcamara use "php artisan route:trans:cache" to cache routes. Without it the error is possible!
 
 ## Troubleshooting
+Feel free to contact me or open an Issue =)
+
+# Old issue now solved
 In case "npm run prod" shows error "TypeError: compiler.plugin is not a function" with "extract-css-media-queries" plugin possibly there is an case with a new webpack plugin system. 
 
 Make sure that the file "src/index.js" in "extract-css-media-queries" in "node_modules" has "compiler.hooks.emit.tapAsync('emit', (compilation, callback) => {" instead of "compiler.plugin('emit', (compilation, callback) => {"
