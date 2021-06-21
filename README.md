@@ -18,6 +18,8 @@ Uses:
 
 -Laravelium Sitemap package https://github.com/Laravelium/laravel-sitemap
 
+-Laravel HTML Minifier https://github.com/dipeshsukhia/laravel-html-minify
+
 
 The main goal is to create a multilingual landing page starter kit with full SEO titles and headings and with Google Pagespeed close to 100.
 
@@ -58,7 +60,7 @@ In my case "ln -s /home/user/multilang-laravel-kit/public /home/user/public_html
 
 -Add AMP 
 
--Add PWA
+-Add PWA        ---- Made few tests so far and got bad results in page load.
 
 -Increase mobile speed with additional fonts
 
