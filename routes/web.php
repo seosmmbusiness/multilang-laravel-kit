@@ -31,17 +31,6 @@ Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function (
 	});
 });
 
-function genArray($urlz) {
-	$transURLS = array();
-	$routeCollection = LaravelLocalization::getSupportedLanguagesKeys();
-	array_push($transURLS,['language' => 'x-default', 'url' => LaravelLocalization::getLocalizedURL( 'en', $urlz)]);
-	foreach ($routeCollection as $value) {
-		array_push($transURLS,['language' => $value, 'url' => LaravelLocalization::getLocalizedURL( $value, $urlz)]);
-	}
-	
-	return $transURLS;
-  };
-
 Route::get('sitemap', function() {
 
 	// create new sitemap object
@@ -53,14 +42,21 @@ Route::get('sitemap', function() {
 
 	// check if there is cached sitemap and build new only if is not
 	if (!$sitemap->isCached()) {
-
+	
 		$routeCollection = Route::getRoutes();
 		$basicURLS = LaravelLocalization::getSupportedLanguagesKeys();
 		
 		foreach ($routeCollection as $routePath) {
 			if($routePath->getActionName() == 'Closure' && $routePath->uri()!= 'api/user' && $routePath->uri()!= 'sitemap') {
+				$transURLS = array();
+				// $routeCollection2 = LaravelLocalization::getSupportedLanguagesKeys();
+				array_push($transURLS,['language' => 'x-default', 'url' => LaravelLocalization::getLocalizedURL( 'en', $routePath->uri())]);
 				foreach ($basicURLS as $value) {
-					$sitemap->add(LaravelLocalization::getLocalizedURL( $value, $routePath->uri()), date('Y-m-d\TH:i:s+00:00'), '1.0', 'daily', [], null, genArray($routePath->uri()));
+					array_push($transURLS,['language' => $value, 'url' => LaravelLocalization::getLocalizedURL( $value, $routePath->uri())]);
+				}
+
+				foreach ($basicURLS as $value) {
+					$sitemap->add(LaravelLocalization::getLocalizedURL( $value, $routePath->uri()), date('Y-m-d\TH:i:s+00:00'), '1.0', 'daily', [], null, $transURLS);
 				}
 			}
 		};
