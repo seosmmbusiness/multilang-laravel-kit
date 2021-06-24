@@ -52,10 +52,11 @@
     <link rel="stylesheet" media="screen and (min-width: 640px)" href="/css/extracted-640.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/extracted-768.css">
     <link rel="stylesheet" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css">
-
+    <x-header-scripts />
 </head>
 
 <body>
+    <x-middle-scripts />
     <a class="skip-link" href="#maincontent">Skip to main</a>
     <noscript>
         <div class="fixed z-50 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -90,7 +91,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -112,6 +112,37 @@
     -->
     <!-- Load JS -->
     <script src="{{ mix('js/app.js') }}" defer></script>
+
+    <x-footer-scripts />
+
+    <script defer>
+        var handledCookie = false; // Was the cookie already handled?
+        var cookieCheckId = undefined; // The id of the checker
+        function getCookie(name) {
+
+            var matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ))
+            return matches ? decodeURIComponent(matches[1]) : undefined
+        }
+
+        var handleCookie = function() {
+            if (!getCookie("laravel_cookie_consent")) {
+
+            } else {
+                clearInterval(cookieCheckId); // Unset the check
+                handledCookie = true; // Set the cookie handled
+                @include('layouts.scriptsToRun')
+            }
+        };
+
+        handleCookie();
+
+        if (!handledCookie) {
+            cookieCheckId = setInterval(handleCookie, 1000); // Handle the cookies
+        }
+    </script>
+
 </body>
 
 </html>

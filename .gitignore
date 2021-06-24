@@ -1,6 +1,6 @@
 # Deps
 node_modules
-vendor
+/vendor
 
 #Arch
 dist.zip

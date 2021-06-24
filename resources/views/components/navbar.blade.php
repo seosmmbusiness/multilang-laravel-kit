@@ -13,7 +13,7 @@
                 </svg>
                 <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
             </a>
-            <ul class="flex items-center hidden space-x-8 lg:flex">
+            <ul class="items-center hidden space-x-8 lg:flex">
                 <li x-data="{ isOpen: false }">
                     <button type="button" aria-label="Open item" title="Open item"
                         class="flex items-center justify-between w-full focus:outline-none">
@@ -59,7 +59,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="flex items-center hidden space-x-8 lg:flex">
+        <ul class="items-center hidden space-x-8 lg:flex">
             <li><a href="/" aria-label="Sign in" title="Sign in"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign
                     in</a></li>

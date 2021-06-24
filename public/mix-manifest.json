@@ -1,7 +1,10 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
+    "/js/app.js": "/js/app.js?id=55f0a424fde16d4a8c29",
+    "/css/app.css": "/css/app.css?id=18a1625293d4dbb11a81",
     "css/extracted-640.css": "css/extracted-640.css",
     "css/extracted-768.css": "css/extracted-768.css",
-    "css/extracted-1024.css": "css/extracted-1024.css"
+    "css/extracted-1024.css": "css/extracted-1024.css",
+    "/css/extracted-1024.css": "/css/extracted-1024.css?id=5bc4db89cb0b3ab7573b",
+    "/css/extracted-640.css": "/css/extracted-640.css?id=3f9fa5e7cb20df288d88",
+    "/css/extracted-768.css": "/css/extracted-768.css?id=b707b9d62d612732d78b"
 }

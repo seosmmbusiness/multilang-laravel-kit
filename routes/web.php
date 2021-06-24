@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function () {
+
+//Enable cache middleware if needed.
+
+// Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function () {
 	Route::group([
 		'prefix' => LaravelLocalization::setLocale(),
 		'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
@@ -29,7 +32,7 @@ Route::middleware('cache.headers:public;max_age=2628000;etag')->group(function (
 		});
 	
 	});
-});
+// });
 
 Route::get('sitemap', function() {
 
