@@ -1,4 +1,4 @@
-## About Laravel 8 + Tailwind + Alpine JS Multilanguage Landing Page Starter Kit GDPS Comply
+## About Laravel 8 + Tailwind + Alpine JS Multilanguage Landing Page Starter Kit GDPR Comply
 
 version: 1.1
 
