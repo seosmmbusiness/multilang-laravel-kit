@@ -119,12 +119,12 @@ So once the visitor accepts with cookies the ads runs.
 ## Troubleshooting
 Feel free to contact me or open an Issue =)
 
-------------------
+
 Already solved. Will leave it here for some time.
 In case "npm run prod" shows error "TypeError: compiler.plugin is not a function" with "extract-css-media-queries" plugin possibly there is an case with a new webpack plugin system. 
 
 Make sure that the file "src/index.js" in "extract-css-media-queries" in "node_modules" has "compiler.hooks.emit.tapAsync('emit', (compilation, callback) => {" instead of "compiler.plugin('emit', (compilation, callback) => {"
-------------------
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel 8 + Tailwind + Alpine JS Multilanguage Landing Page Starter Kit!
