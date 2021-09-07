@@ -132,4 +132,10 @@ Thank you for considering contributing to the Laravel 8 + Tailwind + Alpine JS M
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+            
+## Websites built on the template:
+Contact me to add your website ;)
+            
+- [SMM Panel](https://smm.work/en)
+- [Options signals](https://options-signals.com/en)
 
