@@ -1,7 +1,7 @@
 {
     "/js/app.js": "/js/app.js?id=b5c13fdac774d32a608ce514fc6028e9",
     "/js/tagmanager.js": "/js/tagmanager.js?id=a9b018384a18001b1dd4381c81616409",
-    "/css/app.css": "/css/app.css?id=23fa7b509ea79824a52c975f4d2306e1",
+    "/css/app.css": "/css/app.css?id=0f6d685c667cdadf03fcb39005f15590",
     "css/extracted-640.css": "css/extracted-640.css",
     "css/extracted-768.css": "css/extracted-768.css",
     "css/extracted-1024.css": "css/extracted-1024.css",
@@ -16,7 +16,7 @@
     "/~partytown/partytown-media.js": "/~partytown/partytown-media.js?id=d074f966c007a10632b63111c33223a7",
     "/~partytown/partytown-sw.js": "/~partytown/partytown-sw.js?id=01ce070f9a62303deeb943afdac61bee",
     "/~partytown/partytown.js": "/~partytown/partytown.js?id=03d9369afc5ded41038427814e5a1ff2",
-    "/css/extracted-1024.css": "/css/extracted-1024.css?id=5bc4db89cb0b3ab7573b2c14728ab017",
-    "/css/extracted-640.css": "/css/extracted-640.css?id=3f9fa5e7cb20df288d88c863db6fb2b7",
-    "/css/extracted-768.css": "/css/extracted-768.css?id=b707b9d62d612732d78bb7e20a17f2ea"
+    "/css/extracted-1024.css": "/css/extracted-1024.css?id=75b0c0e6e40a07e178323a24c9be9004",
+    "/css/extracted-640.css": "/css/extracted-640.css?id=6a6765decc65f7d8bf82ffdd143fa139",
+    "/css/extracted-768.css": "/css/extracted-768.css?id=07a2cadc07fc00bafbc8e6089a97efc6"
 }

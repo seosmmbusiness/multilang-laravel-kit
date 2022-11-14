@@ -1,13 +1,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-    purge: [
+    content: [
         "./storage/framework/views/*.php",
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
-    darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
             fontFamily: {
@@ -324,12 +323,6 @@ module.exports = {
                 outline: "0 0 0 3px rgba(101, 31, 255, 0.4)",
             },
         },
-    },
-    variants: {
-        scale: ["responsive", "hover", "focus", "group-hover"],
-        textColor: ["responsive", "hover", "focus", "group-hover"],
-        opacity: ["responsive", "hover", "focus", "group-hover"],
-        backgroundColor: ["responsive", "hover", "focus", "group-hover"],
     },
     plugins: [
         // ...

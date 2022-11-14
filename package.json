@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "@builder.io/partytown": "^0.7.1",
-        "alpinejs": "^2.8.2",
-        "tailwindcss": "^2.1.2"
+        "alpinejs": "<3",
+        "tailwindcss": "^3.2.4"
     }
 }
