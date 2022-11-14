@@ -104,20 +104,20 @@ Basicly my practice: I put tag manager scripts with <script></script> in header-
 
 For ads, I run the basic Adsense script in header or footer.
 
-       ``` 
+
        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
         <script>
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;   //Pauses the ads until get the agreement
         (adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: "ca-pub-XXXXXX", enable_page_level_ads: true});
         </script>
-        ```
+
 
 And after that in the scriptsToRun write: 
 
-        ```
+
         (adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0;   //or 1 if you do not want to run personalized ads.
         (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;             //Start running ads
-        ```
+
 
 So once the visitor accepts with cookies the ads runs.
 
