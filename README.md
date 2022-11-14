@@ -41,7 +41,8 @@ Version 1.2
 - Added 'laravel-mix-compress'
 - Updated NPM deps
 - Updated project to Laravel 9
-  
+- Added GA4 script to header as an example
+
 Version 1.1
 - Added 'laravel-cookie-consent' to comply with GDPR law. 
 - Added a script that checks the cookie created by 'laravel-cookie-consent' if user accepts cookies.
@@ -63,11 +64,11 @@ Version 1.0
 
 -Run "php artisan serve"
 
-## Deployment Laravel 8 Starter Kit on Apache Server
+## Deployment Laravel 9 Starter Kit on Apache Server
 
 -Download git repo "git clone https://github.com/seosmmbusiness/multilang-laravel-kit.git" to your home directory and open it
 
--Run "composer install"
+-Run "composer install --no-dev"
 
 -Make changes in .env file (APP NAME, URL and etc)
 
@@ -75,6 +76,10 @@ Version 1.0
 
 -Create a symlink to html directory (it can be puclic_html or  /var/www/html be or the one your apache server uses) from multilang-laravel-kit/public 
 In my case "ln -s /home/user/multilang-laravel-kit/public /home/user/public_html"
+
+or
+
+change your Apache server public dir to laravel project's public dir
 
 -Run "php artisan optimize"
 

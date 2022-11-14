@@ -13,9 +13,9 @@ return [
     |
     */
     "og:site_name" => "Laravel 8 Multilang Seo Example",
-    "title"=> "Laravel 8 Multilang Seo Example",
-    "description"=> "Laravel 8 Multilang Seo Example - Template to make simple multilang website",
-    "og:title"=> "OG - Laravel 8 Multilang Seo Example",
-    "og:site_name"=> "Laravel 8 Multilang Seo Example Website Template",
-    "og:description"=>"OG - Laravel 8 Multilang Seo Example - Template to make simple multilang website"
+    "title" => "Laravel 9 Multilang Seo Example",
+    "description" => "Laravel 9 Multilang Seo Example - Template to make simple multilang website",
+    "og:title" => "OG - Laravel 9 Multilang Seo Example",
+    "og:site_name" => "Laravel 9 Multilang Seo Example Website Template",
+    "og:description" => "OG - Laravel 9 Multilang Seo Example - Template to make simple multilang website"
 ];
