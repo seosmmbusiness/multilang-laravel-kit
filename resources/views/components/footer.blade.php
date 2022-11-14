@@ -2,8 +2,8 @@
     <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div class="sm:col-span-2">
             <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round"
-                    stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2"
+                    stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
                     <rect x="3" y="1" width="7" height="12"></rect>
                     <rect x="3" y="17" width="7" height="6"></rect>
                     <rect x="14" y="1" width="7" height="6"></rect>
@@ -45,6 +45,15 @@
         <div>
             <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
             <div class="flex items-center mt-1 space-x-3">
+                <a href="https://github.com/seosmmbusiness/multilang-laravel-kit" aria-label="Github Page"
+                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                        fill="currentColor" class="h-5">
+                        <path fill="currentColor"
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                    </svg>
+
+                </a>
                 <a href="/" aria-label="Twitter Page"
                     class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
                     <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -82,7 +91,7 @@
         </p>
         <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li x-data @custom-event.window="window.location.href=$event.detail.value">
-                <select id="localeFooter" class="capitalize pl-4 pr-8 py-0" name="locale" x-data
+                <select id="localeFooter" class="py-0 pl-4 pr-8 capitalize" name="locale" x-data
                     @change="$dispatch('custom-event', {value: $event.target.value })">
                     @foreach (LaravelLocalization::getSupportedLocales() as $locale => $properties)
                         <option value={{ LaravelLocalization::getLocalizedURL($locale, null, [], true) }}
