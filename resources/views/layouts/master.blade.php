@@ -46,7 +46,10 @@
     <link rel="preload" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css" as="style">
     <link rel="preload" href="{{ mix('/js/app.js') }}" as="script">
     <!-- Preload GA -->
-    <link rel="preload" href="{{ mix('/js/ga.js') }}" as="script">
+    <link href="//www.googletagmanager.com" rel="preconnect">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preload" href="{{ mix('/js/tagmanager.js') }}" as="script">
+
 
     <!-- Load css -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
