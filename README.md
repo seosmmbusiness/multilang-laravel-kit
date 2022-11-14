@@ -42,6 +42,7 @@ Version 1.2
 - Updated NPM deps
 - Updated project to Laravel 9
 - Added GA4 script to header as an example
+- Added href='/' for SEO check up
 
 Version 1.1
 - Added 'laravel-cookie-consent' to comply with GDPR law. 
