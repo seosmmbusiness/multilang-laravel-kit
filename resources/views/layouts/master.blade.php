@@ -45,11 +45,22 @@
     <link rel="preload" media="screen and (min-width: 768px)" href="/css/extracted-768.css" as="style">
     <link rel="preload" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css" as="style">
     <link rel="preload" href="{{ mix('/js/app.js') }}" as="script">
-    <!-- Preload GA -->
-    {{-- Uncomment next lines for GTM --}}
-    {{-- <link href="//www.googletagmanager.com" rel="preconnect">
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="preload" href="{{ mix('/js/tagmanager.js') }}" as="script"> --}}
+    <!-- preconnect and dns-prefetch -->
+    <link rel="preconnect" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+    {{-- Preload Partytown --}}
+    <link rel="preload" href="{{ mix('/~partytown/partytown.js') }}" as="script">
+    {{-- Configure PartyTown --}}
+    <script>
+        partytown = {
+            forward: ['dataLayer.push'],
+            debug: true,
+        };
+    </script>
+    <script src="{{ mix('/~partytown/partytown.js') }}"></script>
+    <!-- Preload GA using partytown -->
+    <script type="text/partytown" src="{{ mix('js/tagmanager.js') }}"></script>
 
     <!-- Load css -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" />

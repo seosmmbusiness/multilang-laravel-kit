@@ -1,5 +1,9 @@
 const mix = require("laravel-mix");
 require("laravel-mix-compress");
+const partytown = require("@builder.io/partytown/utils");
+
+mix.copy(partytown.libDirPath(), "public/~partytown");
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

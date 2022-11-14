@@ -21,6 +21,7 @@
         "sass-loader": "^10.1.1"
     },
     "dependencies": {
+        "@builder.io/partytown": "^0.7.1",
         "alpinejs": "^2.8.2",
         "tailwindcss": "^2.1.2"
     }
