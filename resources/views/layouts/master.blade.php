@@ -46,7 +46,7 @@
     <link rel="preload" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css" as="style">
     <link rel="preload" href="{{ mix('/js/app.js') }}" as="script">
     <!-- Preload GA -->
-    <link rel="preconnect" href="https://www.googletagmanager.com/gtag/js" as="script">
+    <link rel="preconnect" href="https://www.googletagmanager.com/gtag/js?id=G-4YEXWD71MJ" as="script">
     <link rel="preload" href="{{ mix('/js/ga.js') }}" as="script">
 
     <!-- Load css -->
