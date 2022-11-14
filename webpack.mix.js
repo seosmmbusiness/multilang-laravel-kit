@@ -1,5 +1,6 @@
 const mix = require("laravel-mix");
 require("laravel-mix-compress");
+require("laravel-mix-extract-media-queries");
 const partytown = require("@builder.io/partytown/utils");
 
 mix.copy(partytown.libDirPath(), "public/~partytown");
@@ -18,14 +19,6 @@ mix.js("resources/js/app.js", "public/js")
     .js("resources/js/tagmanager.js", "public/js/tagmanager.js")
     .postCss("resources/css/app.css", "public/css", [require("tailwindcss")])
     .sourceMaps();
-if (mix.inProduction()) {
-    mix.version();
-}
-
-mix.compress();
-require("laravel-mix-extract-media-queries");
-
-//...
 
 mix.extractMediaQueries({
     //breakpoints: [640, 768, 1024, 1280, 1536], // default Tailwind breakpoints
@@ -35,3 +28,9 @@ mix.extractMediaQueries({
     minify: true,
     filename: "css/extracted-[breakpoint].[ext]",
 });
+
+if (mix.inProduction()) {
+    mix.version();
+}
+
+mix.compress();

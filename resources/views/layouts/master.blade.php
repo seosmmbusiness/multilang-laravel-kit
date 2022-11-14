@@ -41,11 +41,15 @@
     <!-- Preload -->
     <!-- <link rel="preconnect" href="https://cdnjs.cloudflare.com" /> -->
     <link rel="preload" href="{{ mix('/css/app.css') }}" as="style">
-    <link rel="preload" media="screen and (min-width: 640px)" href="/css/extracted-640.css" as="style">
-    <link rel="preload" media="screen and (min-width: 768px)" href="/css/extracted-768.css" as="style">
-    <link rel="preload" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css" as="style">
+    <link rel="preload" media="screen and (min-width: 640px)" href="{{ mix('/css/extracted-640.css') }}"
+        as="style">
+    <link rel="preload" media="screen and (min-width: 768px)" href="{{ mix('/css/extracted-768.css') }}"
+        as="style">
+    <link rel="preload" media="screen and (min-width: 1024px)" href="{{ mix('/css/extracted-1024.css') }}"
+        as="style">
     <link rel="preload" href="{{ mix('/js/app.js') }}" as="script">
-    <!-- preconnect and dns-prefetch -->
+
+    <!-- preconnect and dns-prefetch for GTM-->
     <link rel="preconnect" href="//www.googletagmanager.com" />
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 
@@ -64,9 +68,9 @@
 
     <!-- Load css -->
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}" />
-    <link rel="stylesheet" media="screen and (min-width: 640px)" href="/css/extracted-640.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/extracted-768.css">
-    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="/css/extracted-1024.css">
+    <link rel="stylesheet" media="screen and (min-width: 640px)" href="{{ mix('/css/extracted-640.css') }}">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="{{ mix('/css/extracted-768.css') }}">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="{{ mix('/css/extracted-1024.css') }}">
     <x-header-scripts />
 </head>
 
