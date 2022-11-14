@@ -1,10 +1,11 @@
-## About Laravel 8 + Tailwind + Alpine JS Multilanguage Landing Page Starter Kit GDPR Comply
+## About Laravel 9 + Tailwind + Alpine JS Multilanguage Landing Page Starter Kit GDPR Comply
 
-version: 1.1
+version: 1.2
+check the working version on [laravel.lots-of-online.work](https://laravel.lots-of-online.work/)
 
 Uses:
 
--Laravel 8 - Basic Example-app
+-Laravel 9 - Basic Example-app
         
 -Mcamara/laravel-localization https://github.com/mcamara/laravel-localization
 
@@ -36,6 +37,11 @@ PHP 8+. If you do not have PHP 8 and want to use PHP 7 you should remove  "Spati
 
 ## Change Log
 
+Version 1.2
+- Added 'laravel-mix-compress'
+- Updated NPM deps
+- Updated project to Laravel 9
+  
 Version 1.1
 - Added 'laravel-cookie-consent' to comply with GDPR law. 
 - Added a script that checks the cookie created by 'laravel-cookie-consent' if user accepts cookies.

@@ -1,5 +1,5 @@
 const mix = require("laravel-mix");
-
+require("laravel-mix-compress");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,6 +17,7 @@ if (mix.inProduction()) {
     mix.version();
 }
 
+mix.compress();
 require("laravel-mix-extract-media-queries");
 
 //...
