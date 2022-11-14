@@ -68,10 +68,10 @@ Version 1.0
 - Run "composer install --no-dev"
 - Make changes in .env file (APP NAME, URL and etc)
 - Run "php artisan key:generate"
-- Create a symlink to html directory (it can be puclic_html or  /var/www/html be or the one your apache server uses) from multilang-laravel-kit/public 
-        In my case "ln -s /home/user/multilang-laravel-kit/public /home/user/public_html"
+- Create a symlink to html directory (it can be ```puclic_html``` or  ```/var/www/html``` be or the one your apache server uses) from multilang-laravel-kit/public 
+        In my case ```"ln -s /home/user/multilang-laravel-kit/public /home/user/public_html"```
         or
-        change your Apache server public dir to laravel project's public dir
+        change your Apache server public dir to laravel project's public dir 
 - Run "php artisan optimize"
 - Run "php artisan route:trans:cache"
 
@@ -110,9 +110,9 @@ For ads, I run the basic Adsense script in header or footer.
 
 And after that in the scriptsToRun write: 
 
-(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0;    //or 1 if you do not want to run personalized ads.
-(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;             //Start running ads
-
+```(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0;   //or 1 if you do not want to run personalized ads.
+(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;            //Start running ads
+```
 So once the visitor accepts with cookies the ads runs.
 
 ## Troubleshooting
