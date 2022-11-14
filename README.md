@@ -41,7 +41,7 @@ Version 1.2
 - Added 'laravel-mix-compress'
 - Updated NPM deps
 - Updated project to Laravel 9
-- Added GA4 script to header as an example
+- Added GTM script as an example. Uncomment Lines in master.blade.php, middle-scripts.blade.php and footer.blade.scripts.php
 - Added href='/' for SEO check up
 
 Version 1.1
