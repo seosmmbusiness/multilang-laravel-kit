@@ -57,23 +57,23 @@ Version 1.0
 ## Installation for Development
 
 - Download git repo "git clone https://github.com/seosmmbusiness/multilang-laravel-kit.git"
-- Run "composer install"
-- Run "npm i"
-- Run "npm run dev"
-- Run "php artisan serve"
+- Run ```composer install```
+- Run ```npm i```
+- Run ```npm run dev```
+- Run ```php artisan serve```
 
 ## Deployment Laravel 9 Starter Kit on Apache Server
 
-- Download git repo "git clone https://github.com/seosmmbusiness/multilang-laravel-kit.git" to your home directory and open it
-- Run "composer install --no-dev"
+- Download git repo ```git clone https://github.com/seosmmbusiness/multilang-laravel-kit.git``` to your home directory and open it
+- Run ```composer install --no-dev```
 - Make changes in .env file (APP NAME, URL and etc)
-- Run "php artisan key:generate"
+- Run ```php artisan key:generate```
 - Create a symlink to html directory (it can be ```puclic_html``` or  ```/var/www/html``` be or the one your apache server uses) from multilang-laravel-kit/public 
-        In my case ```"ln -s /home/user/multilang-laravel-kit/public /home/user/public_html"```
+        In my case ```ln -s /home/user/multilang-laravel-kit/public /home/user/public_html```
         or
         change your Apache server public dir to laravel project's public dir 
-- Run "php artisan optimize"
-- Run "php artisan route:trans:cache"
+- Run ```php artisan optimize```
+- Run ```php artisan route:trans:cache```
 
 ## Todoo
 
