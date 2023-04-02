@@ -59,7 +59,7 @@
     <script>
         partytown = {
             forward: ['dataLayer.push'],
-            debug: true,
+            debug: false,
         };
     </script>
     <script src="{{ mix('/~partytown/partytown.js') }}"></script>
